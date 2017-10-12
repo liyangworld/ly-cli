@@ -1,0 +1,52 @@
+#!/usr/bin/env node
+
+const path = require('path')
+
+const program = require('commander')
+
+
+const res = command => path.resolve(__dirname, '../lib/', command)
+
+program
+	.version(require('../package').version )
+
+program
+    .usage('<command>')
+
+program
+	.command('list')
+	.description('List all the templates')
+	.alias('l')
+	.action(() => {
+		require(res('list'))
+	})
+
+program
+	.command('add')
+	.description('Add a new template')
+	.alias('a')
+	.action(() => {
+		require(res('add'))
+	})
+
+program
+	.command('delete')
+	.description('Delete a template')
+	.alias('d')
+	.action(() => {
+		require(res('delete'))
+	})
+
+program
+	.command('init')
+	.description('Generate a new project')
+	.alias('i')
+	.action(() => {
+		require(res('init'))
+	})
+
+program.parse(process.argv)
+
+if(!program.args.length){
+	program.help()
+}
