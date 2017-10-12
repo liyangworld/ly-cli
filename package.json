@@ -1,6 +1,6 @@
 {
   "name": "ly-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "项目脚手架",
   "bin": {
     "ly-cli": "bin/ly-cli"
