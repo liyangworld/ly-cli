@@ -1,0 +1,173 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\dev\\nodejs\\node.exe',
+1 verbose cli   'C:\\dev\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.8
+3 info using node@v6.8.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'D:\\liyang\\gitHub\\ly-cli',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\xiangmai8\AppData\Roaming\npm-cache\ly-cli\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\xiangmai8\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle ly-cli@1.0.0~prepublish: ly-cli@1.0.0
+11 silly lifecycle ly-cli@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\xiangmai8\\AppData\\Roaming\\npm-cache\\ly-cli\\1.0.0\\package.tgz',
+12 verbose tar pack   'D:\\liyang\\gitHub\\ly-cli' ]
+13 verbose tarball C:\Users\xiangmai8\AppData\Roaming\npm-cache\ly-cli\1.0.0\package.tgz
+14 verbose folder D:\liyang\gitHub\ly-cli
+15 verbose addLocalTarball adding from inside cache C:\Users\xiangmai8\AppData\Roaming\npm-cache\ly-cli\1.0.0\package.tgz
+16 verbose correctMkdir C:\Users\xiangmai8\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd ly-cli@1.0.0
+18 verbose afterAdd C:\Users\xiangmai8\AppData\Roaming\npm-cache\ly-cli\1.0.0\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\xiangmai8\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\xiangmai8\AppData\Roaming\npm-cache\ly-cli\1.0.0\package\package.json written
+21 silly publish { name: 'ly-cli',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: '项目脚手架',
+21 silly publish   bin: { 'ly-cli': 'bin/ly-cli' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/liyangworld/ly-cli.git' },
+21 silly publish   keywords: [ 'cli' ],
+21 silly publish   author: { name: 'liyang' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/liyangworld/ly-cli/issues' },
+21 silly publish   homepage: 'https://github.com/liyangworld/ly-cli#readme',
+21 silly publish   dependencies:
+21 silly publish    { chalk: '^2.1.0',
+21 silly publish      'cli-table': '^0.3.1',
+21 silly publish      commander: '^2.11.0',
+21 silly publish      'download-git-repo': '^1.0.1',
+21 silly publish      inquirer: '^3.3.0',
+21 silly publish      ora: '^1.3.0' },
+21 silly publish   readme: '# ly-cli\r\n项目脚手架，可以根据不同的模板生成项目初始结构。\r\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'c410f92055dd5643fc6b852c7cce054224056a68',
+21 silly publish   _id: 'ly-cli@1.0.0',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: '9f7bbe6b9ca6762815d0903b53cc8f92c87c7848',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name ly-cli
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'ly-cli',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'ly-cli',
+26 silly mapToRegistry   name: 'ly-cli',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://registry.npmjs.org/ly-cli
+28 verbose publish registryBase http://registry.npmjs.org/
+29 silly publish uploading C:\Users\xiangmai8\AppData\Roaming\npm-cache\ly-cli\1.0.0\package.tgz
+30 verbose request uri http://registry.npmjs.org/ly-cli
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 16:34:04
+33 verbose request using bearer token for auth
+34 verbose request id f8b58c2a4dd38e98
+35 http request PUT http://registry.npmjs.org/ly-cli
+36 info retry will retry, error on last attempt: Error: read ECONNRESET
+37 info attempt registry request try #2 at 16:34:52
+38 verbose request using bearer token for auth
+39 http request PUT http://registry.npmjs.org/ly-cli
+40 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.72.162:80
+41 info attempt registry request try #3 at 16:36:13
+42 verbose request using bearer token for auth
+43 http request PUT http://registry.npmjs.org/ly-cli
+44 http 503 http://registry.npmjs.org/ly-cli
+45 verbose bad json <?xml version="1.0" encoding="utf-8"?>
+45 verbose bad json <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+45 verbose bad json  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+45 verbose bad json <html>
+45 verbose bad json   <head>
+45 verbose bad json     <title>503 Request body sent more than once</title>
+45 verbose bad json   </head>
+45 verbose bad json   <body>
+45 verbose bad json     <h1>Error 503 Request body sent more than once</h1>
+45 verbose bad json     <p>Request body sent more than once</p>
+45 verbose bad json     <h3>Guru Mediation:</h3>
+45 verbose bad json     <p>Details: cache-nrt6121-NRT 1507797374 494630123</p>
+45 verbose bad json     <hr>
+45 verbose bad json     <p>Varnish cache server</p>
+45 verbose bad json   </body>
+45 verbose bad json </html>
+46 error registry error parsing json
+47 verbose headers { server: 'Varnish',
+47 verbose headers   'retry-after': '0',
+47 verbose headers   'content-type': 'text/html; charset=utf-8',
+47 verbose headers   'content-length': '489',
+47 verbose headers   'accept-ranges': 'bytes',
+47 verbose headers   date: 'Thu, 12 Oct 2017 08:36:13 GMT',
+47 verbose headers   via: '1.1 varnish',
+47 verbose headers   connection: 'close',
+47 verbose headers   'x-served-by': 'cache-nrt6121-NRT',
+47 verbose headers   'x-cache': 'MISS',
+47 verbose headers   'x-cache-hits': '0',
+47 verbose headers   'x-timer': 'S1507797372.277387,VS0,VE1452' }
+48 verbose request invalidating C:\Users\xiangmai8\AppData\Roaming\npm-cache\registry.npmjs.org\ly-cli on PUT
+49 error publish Failed PUT 503
+50 verbose stack SyntaxError: Unexpected token < in JSON at position 1
+50 verbose stack
+50 verbose stack <?xml version="1.0" encoding="utf-8"?>
+50 verbose stack <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+50 verbose stack  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+50 verbose stack <html>
+50 verbose stack   <head>
+50 verbose stack     <title>503 Request body sent more than once</title>
+50 verbose stack   </head>
+50 verbose stack   <body>
+50 verbose stack     <h1>Error 503 Request body sent more than once</h1>
+50 verbose stack     <p>Request body sent more than once</p>
+50 verbose stack     <h3>Guru Mediation:</h3>
+50 verbose stack     <p>Details: cache-nrt6121-NRT 1507797374 494630123</p>
+50 verbose stack     <hr>
+50 verbose stack     <p>Varnish cache server</p>
+50 verbose stack   </body>
+50 verbose stack </html>
+50 verbose stack
+50 verbose stack     at Object.parse (native)
+50 verbose stack     at CachingRegistryClient.<anonymous> (C:\dev\nvm\v6.8.1\node_modules\npm\node_modules\npm-registry-client\lib\request.js:237:23)
+50 verbose stack     at Request._callback (C:\dev\nvm\v6.8.1\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+50 verbose stack     at Request.self.callback (C:\dev\nvm\v6.8.1\node_modules\npm\node_modules\request\request.js:187:22)
+50 verbose stack     at emitTwo (events.js:106:13)
+50 verbose stack     at Request.emit (events.js:191:7)
+50 verbose stack     at Request.<anonymous> (C:\dev\nvm\v6.8.1\node_modules\npm\node_modules\request\request.js:1044:10)
+50 verbose stack     at emitOne (events.js:96:13)
+50 verbose stack     at Request.emit (events.js:188:7)
+50 verbose stack     at IncomingMessage.<anonymous> (C:\dev\nvm\v6.8.1\node_modules\npm\node_modules\request\request.js:965:12)
+51 verbose cwd D:\liyang\gitHub\ly-cli
+52 error Windows_NT 10.0.15063
+53 error argv "C:\\dev\\nodejs\\node.exe" "C:\\dev\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+54 error node v6.8.1
+55 error npm  v3.10.8
+56 error Unexpected token < in JSON at position 1
+56 error
+56 error <?xml version="1.0" encoding="utf-8"?>
+56 error <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+56 error  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+56 error <html>
+56 error   <head>
+56 error     <title>503 Request body sent more than once</title>
+56 error   </head>
+56 error   <body>
+56 error     <h1>Error 503 Request body sent more than once</h1>
+56 error     <p>Request body sent more than once</p>
+56 error     <h3>Guru Mediation:</h3>
+56 error     <p>Details: cache-nrt6121-NRT 1507797374 494630123</p>
+56 error     <hr>
+56 error     <p>Varnish cache server</p>
+56 error   </body>
+56 error </html>
+57 error If you need help, you may report this error at:
+57 error     <https://github.com/npm/npm/issues>
+58 verbose exit [ 1, true ]
